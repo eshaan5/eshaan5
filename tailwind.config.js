@@ -23,6 +23,13 @@ export default {
         card: "0px 1px 2px 0px rgba(0, 0, 0, 0.05)",
       },
     },
+    screens: {
+      xs: "350px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    }
   },
   plugins: [],
 };

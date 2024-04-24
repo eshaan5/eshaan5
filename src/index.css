@@ -23,7 +23,7 @@ body:has(.card[data-color="green"]:hover) {
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply max-w-[100vw] mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
 
   .head-text {
@@ -177,4 +177,50 @@ body:has(.card[data-color="green"]:hover) {
   background: #fff;
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff, 0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+
+/* NAVBAR */
+
+.nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  /* display: block; */
+  padding: 0.4rem 1.7rem;
+  z-index: 2;
+  /* position: fixed; */
+  /* left: 50%; */
+  transform: translateX(-50%);
+  /* bottom: 2rem; */
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  flex-direction: column;
+}
+
+.nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.1rem;
+  color: var(--color-white);
+}
+
+.nav a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.nav a.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+
+/*                         Media Query (Small)                      */
+
+@media screen and (max-width: 600px) {
+  .nav a {
+      padding: 0.3rem;
+  }
 }
