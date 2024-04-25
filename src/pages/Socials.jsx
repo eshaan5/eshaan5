@@ -17,9 +17,6 @@ const Socials = () => {
           <a href="https://twitter.com/Esh_tastic" target="_blank">
             <FaXTwitter size={30} />
           </a>
-          <a href="https://medium.com/@eshaanbagga" target="_blank">
-            <FaMediumM size={30} />
-          </a>
         </div>
         <div className="flex gap-10 w-[80vw] md:flex-row xs:flex-col">
           <iframe src="https://widgets.sociablekit.com/linkedin-profile-posts/iframe/25401785" frameborder="0" className="xs:w-[100%] md:w-[50%]" height="500"></iframe>
@@ -29,7 +26,10 @@ const Socials = () => {
           <a href="https://github.com/eshaan5" target="_blank">
             <FaGithub size={30} />
           </a>
-          <a href="https://leetcode.com/eshaanbagga/" target="_blank">
+          <a href="https://medium.com/@eshaanbagga" target="_blank">
+            <FaMediumM size={30} />
+          </a>
+          {/* <a href="https://leetcode.com/eshaanbagga/" target="_blank">
             <SiLeetcode size={30} color="#48D1CC" />
           </a>
           <a href="https://www.geeksforgeeks.org/user/eshaanbagga/" target="_blank">
@@ -37,7 +37,7 @@ const Socials = () => {
           </a>
           <a href="https://www.naukri.com/code360/profile/b39092f7-9be1-49e1-b11e-d9c8660ecded" target="_blank">
             <SiCodingninjas size={30} color="orange" />
-          </a>
+          </a> */}
         </div>
       </div>
 
@@ -57,7 +57,7 @@ const Socials = () => {
         <a href="https://github.com/eshaan5" target="_blank">
           <FaGithub size={30} />
         </a>
-        <a href="https://leetcode.com/eshaanbagga/" target="_blank">
+        {/* <a href="https://leetcode.com/eshaanbagga/" target="_blank">
           <SiLeetcode size={30} color="#48D1CC" />
         </a>
         <a href="https://www.geeksforgeeks.org/user/eshaanbagga/" target="_blank">
@@ -65,7 +65,7 @@ const Socials = () => {
         </a>
         <a href="https://www.naukri.com/code360/profile/b39092f7-9be1-49e1-b11e-d9c8660ecded" target="_blank">
           <SiCodingninjas size={30} color="orange" />
-        </a>
+        </a> */}
       </div>
     </section>
   );
