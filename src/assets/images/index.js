@@ -4,6 +4,7 @@ import membook from './membook.jpg'
 import dfund from './dfund.jpg'
 import genmed from './genmed.jpg'
 import support from './support.jpg'
+import ragbot from './ragbot.svg'
 
 export {
     hero,
@@ -11,5 +12,6 @@ export {
     membook,
     dfund,
     genmed,
-    support
+    support,
+    ragbot,
 }

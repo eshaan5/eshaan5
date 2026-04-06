@@ -13,13 +13,13 @@ const About = () => {
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>Software Engineer based in India, speacializing in empowering innovation through technology, with a passion for web development and a drive for impactful solutions.</p>
+        <p>Software Engineer based in New Delhi, India, specializing in scalable backend systems, data infrastructure, and multi-tenant applications. Currently at Restroworks, where I build analytics pipelines processing millions of events daily, serverless workflows on AWS and GCP, and financial reporting systems for 500+ restaurant tenants. I'm passionate about solving complex engineering problems and turning data into impactful products.</p>
       </div>
 
       <div className="py-16">
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
-          <p>Innovating through code, driving impactful solutions with a focus on web development expertise—my journey as a Software Engineer.</p>
+          <p>From building data streaming pipelines and serverless workflows to financial reporting and third-party integrations — here's a look at where I've worked and what I've shipped.</p>
         </div>
 
         <div className="mt-12 flex">

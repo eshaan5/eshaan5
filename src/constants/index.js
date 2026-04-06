@@ -9,18 +9,17 @@ import {
     linkedin,
     mongodb,
     restroworks,
-    mui,
-    nextjs,
     nodejs,
     react,
-    redux,
-    sass,
-    tailwindcss,
     typescript,
     rfm360,
     aws,
     angular,
-    solidity,
+    snowflake,
+    bigquery,
+    postgresql,
+    redis,
+    docker,
 } from "../assets/icons";
 
 import { membook, dfund, genmed, support } from "../assets/images";
@@ -29,12 +28,12 @@ export const skills = [
     {
         imageUrl: javascript,
         name: "JavaScript",
-        type: "Frontend",
+        type: "Language",
     },
     {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Language",
     },
     {
         imageUrl: nodejs,
@@ -47,39 +46,49 @@ export const skills = [
         type: "Backend",
     },
     {
+        imageUrl: react,
+        name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: angular,
+        name: "AngularJS",
+        type: "Frontend",
+    },
+    {
         imageUrl: mongodb,
         name: "MongoDB",
         type: "Database",
     },
     {
-        imageUrl: angular,
-        name: "Angular",
-        type: "Frontend",
+        imageUrl: postgresql,
+        name: "PostgreSQL",
+        type: "Database",
     },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
+        imageUrl: snowflake,
+        name: "Snowflake",
+        type: "Data Warehouse",
     },
     {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
+        imageUrl: bigquery,
+        name: "BigQuery",
+        type: "Data Warehouse",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
+        imageUrl: redis,
+        name: "Redis",
+        type: "Database",
     },
     {
         imageUrl: aws,
-        name: "Amazon Web Services (AWS)",
-        type: "Cloud Services",
+        name: "AWS",
+        type: "Cloud",
     },
     {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
+        imageUrl: docker,
+        name: "Docker",
+        type: "DevOps",
     },
     {
         imageUrl: git,
@@ -87,34 +96,14 @@ export const skills = [
         type: "Version Control",
     },
     {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
+        imageUrl: css,
+        name: "CSS",
+        type: "Frontend",
     },
     {
         imageUrl: html,
         name: "HTML",
         type: "Frontend",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: solidity,
-        name: "Solidity",
-        type: "Web3",
     },
 ];
 
@@ -126,22 +115,27 @@ export const experiences = [
         iconBg: "#fbc3bc",
         date: "April 2024 - Present",
         points: [
-            "Currently undergoing product training during probation period, gaining in-depth understanding of RestroWorks' software solutions and their application within the restaurant industry",
-            "Engaging in hands-on learning sessions to familiarize myself with the features, functionalities, and user workflows of the multi-tenant support application.",
-            "Collaborating with senior team members to grasp the technical intricacies of the MEAN stack architecture and AWS services utilized within the RestroWorks ecosystem.",
+            "Building scalable backend systems, analytics infrastructure, and multi-tenant applications serving 500+ restaurant tenants.",
+            "Architected a centralized logging pipeline intercepting Express res.end to capture API metadata and emit structured events, significantly improving debugging efficiency and observability across microservices.",
+            "Built near real-time data streaming using MongoDB Change Streams and Snowpipe ingestion pipelines processing ~6M events/day into Snowflake for analytics and reporting.",
+            "Evaluated cloud warehouse architectures including BigQuery and Redshift before finalizing Snowflake; designed schemas, staging layers, and pipelines powering business intelligence dashboards used by stakeholders.",
+            "Developed high-volume financial reporting features with optimized MongoDB aggregations, ensuring tax correctness, GSTIN validation, and precision decimal rounding across large transactional datasets.",
+            "Built and maintained third-party accounting integrations (QuickBooks, Xero, ZohoBooks) and government APIs with robust retry logic, failure handling, idempotency, and structured audit logging.",
+            "Designed async and serverless workflows using AWS SQS, Lambda, S3, and Google Cloud Functions to handle background jobs, long-running tasks, and event-driven processing at scale.",
+            "Won Most Impactful Solution Award at a company-wide hackathon for building a RAG-based AI chatbot to serve as the first point of contact for customer support queries.",
         ],
     },
     {
-        title: "Software Engineer Trainee",
+        title: "Software Engineer Intern",
         company_name: "Restroworks",
         icon: restroworks,
         iconBg: "#fbc3bc",
         date: "January 2024 - April 2024",
         points: [
-            "Contributed to the development of a multi-tenant technical support application using the MEAN stack.",
-            "Implemented AWS SQS for asynchronous communication and cron jobs for automated tasks, enhancing application reliability and efficiency.",
-            "Utilized MongoDB aggregations to extract valuable insights from large datasets, enabling informed decision-making for respective brands.",
-            "Engaged in agile methodologies, participating in sprint planning and code reviews to ensure collaboration and code quality.",
+            "Built and shipped features for a multi-tenant internal support platform handling tickets and operational workflows across hundreds of restaurant brands, using Node.js, Express, AngularJS, and MongoDB.",
+            "Implemented asynchronous communication patterns using AWS SQS for decoupled background processing, and cron jobs for scheduled operational tasks.",
+            "Developed complex MongoDB aggregation pipelines to surface operational insights and performance metrics for internal teams.",
+            "Collaborated with senior engineers in an agile environment, participating in sprint planning, code reviews, and production deployments.",
         ],
     },
     {
@@ -149,11 +143,11 @@ export const experiences = [
         company_name: "RFM360",
         icon: rfm360,
         iconBg: "#fbc3bc",
-        date: "June 2022 - July 2022",
+        date: "June 2022 - August 2022",
         points: [
-            "Conceptualised and developed the front end of the campaigns section of the Business Management platform by Root Force Marketer, including Email and SMS campaigns.",
-            "Developed Campaigns section in the Business Management App to help reach more customers.",
-            "Worked with React.js, JavaScript, & got the taste of handling backend logic using Django.",
+            "Developed a full Email and SMS campaigns module using React.js for a business management platform, enabling marketing automation and targeted customer engagement workflows.",
+            "Built reusable UI components for campaign creation, scheduling, and audience targeting, improving marketing team productivity.",
+            "Collaborated closely with backend and product teams to integrate campaign APIs and deliver a polished, end-to-end feature.",
         ],
     },
 ];
@@ -177,6 +171,13 @@ export const socialLinks = [
 ];
 
 export const projects = [
+    {
+        iconUrl: restroworks,
+        theme: 'btn-back-yellow',
+        name: 'RAG-based AI Support Chatbot',
+        description: 'Built an AI chatbot using Retrieval-Augmented Generation (RAG) to serve as the first point of contact for customer queries at Restroworks. Won Most Impactful Solution at the company hackathon.',
+        link: 'https://github.com/eshaan5/restroworks-copilot',
+    },
     {
         iconUrl: support,
         theme: 'btn-back-red',

@@ -24,6 +24,11 @@ import rfm360 from './rfm360.png'
 import aws from './aws.png'
 import angular from './angular.png'
 import solidity from './solidity.webp'
+import snowflake from './snowflake.svg'
+import bigquery from './bigquery.svg'
+import postgresql from './postgresql.svg'
+import redis from './redis.svg'
+import docker from './docker.svg'
 
 export {
     css,
@@ -51,5 +56,10 @@ export {
     rfm360,
     aws,
     angular,
-    solidity
+    solidity,
+    snowflake,
+    bigquery,
+    postgresql,
+    redis,
+    docker,
 }
